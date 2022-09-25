@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokédex</title>
+    <script>
+      function setStyleSheet(url) {
+        var stylesheet = document.getElementById("stylesheet");
+        stylesheet.setAttribute("href", url);
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+  </head>
+
+  <body>
+    
+    <div class="background-container">
+      <div class="container">
+        <div id="main-header">
+          <h1>
+            <img src="./svg/Pokeball.svg" /> Pokédex
+            <button class="alphabetic" type="button" onclick="sortByName()">
+              <img src="./svg/A Z.svg" />
+              <img src="./svg/Arrow.svg" />
+            </button>
+          </h1>
+
+          <input
+            id="searchbar"
+            onkeyup="search_pokemon()"
+            type="text"
+            name="search"
+            placeholder="Procurar"
+          />
+        </div>
+
+        <ul data-js="pokedex" class="pokedex"></ul>
+      </div>
+      <div id="particles-js"></div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="./background/particles.js"></script>
+    <script type="text/javascript" src="./background/app.js"></script>
+  </body>
+</html>
