@@ -36,7 +36,7 @@ particlesJS(
           nb_sides: 6,
         },
         image: {
-          src: "./background/pokeball.png",
+          src: "./background/Pokeball.png",
           width: 50,
           height: 50,
         },
